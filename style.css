@@ -165,7 +165,114 @@ body {
 
     }
 
-    h2 {
+    .pricing-header {
         text-align: center;
-        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .pricing-header h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #111;
+        margin-bottom: 10px;
+    }
+
+    .pricing-header p {
+        color: #666;
+        font-size: 1rem;
+    }
+
+    .pricing-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        align-items: stretch;
+        max-width: 1200px;
+        margin: auto;
+        flex-wrap: wrap;
+
+    }
+
+    .pricing-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 35px 30px;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    body {
+        background-color: #f8f9fa;
+        color: #333;
+        padding: 50px 20px;
+    }
+
+    .pro-card {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #ffffff;
+        border: none;
+        transform: scale(1.03);
+        box-shadow: 0 10px 30 rgba(0, 0, 0, 0.15);
+    }
+
+    .plan-tupe {
+        font-size: 0.85rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #718096;
+
+    }
+
+    .pro-card .plan-tupe {
+        color: #cbd5e0;
+    }
+
+    .price {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #1a202c;
+    }
+
+    .pro-card .price {
+        color: #ffffff;
+    }
+
+    .per-person {
+        font-size: 0.9rem;
+        color: #718096;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .pro-card .per-person {
+        color: #a0aec0;
+    }
+
+    .features {
+        list-style: none;
+        margin-bottom: 40px;
+        flex-grow: 1;
+    }
+
+    .features li {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+        color: #4a5568;
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .pro-card .features li {
+        color: #e2e8f0;
+    }
+
+    .features li::before {
+        content: ".";
+        position: absolute;
+        left: 0;
+        color: #a0aec0;
     }
