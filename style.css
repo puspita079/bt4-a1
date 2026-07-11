@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
-
-    *img {
-        max-width: 100%;
-    }
-
+    box-sizing: border-box;
 }
+
+*img {
+    max-width: 100%;
 }
+
+
 
 nav {
     display: flex;
@@ -95,3 +96,76 @@ ul li a {
     color: #fff;
     z-index: 1;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+.speaker-section {
+
+    text-align: center;
+}
+
+.speaker-section h2 {
+    text-align: center;
+
+}
+
+.speaker-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.speaker-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+    .label {
+        display: inline-block;
+        background: #007bff;
+        color: #fff;
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .speaker-card h3 {
+        margin: 8px 0 4px;
+        font-size: 16px;
+    }
+
+    .speaker-card p {
+        color: #666;
+        font-size: 13px;
+
+    }
+
+    @media (max-width: 768px) {
+        .speaker-grid {
+
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    h2 {
+        text-align: center;
+        width: 100%;
+    }
